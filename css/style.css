@@ -84,6 +84,7 @@ body {
   background-color: #2d2640;
   grid-column: 1/-1;
   grid-row: 2/3;
+  grid-column-gap: 2rem;
   position: relative; }
   .hero__left {
     grid-column: 2/6;
