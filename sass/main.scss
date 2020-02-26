@@ -1,4 +1,122 @@
-html {
+//Layout: 
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+//COLORS
+
+$Dark-Violet: hsl(256, 26%, 20%);
+$Grayish-Blue: hsl(216, 30%, 68%);
+
+$Very-Dark-Violet: hsl(270, 9%, 17%);
+$Dark-Greyish-Violet: hsl(273, 4%, 51%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+
+/*
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Headings
+
+- Family: [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display)
+- Weights: 400
+
+### Body
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+
+## Icons
+
+You can use either use the social icons provided or load in a font icon library. Some library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+*/
+
+*,
+html, 
+body {
     margin: 0;
+    padding: 0;
+    font-size: 62.5%; //1rem = 10px
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 10vh 40vh 100vh 30vh;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-family: sans-serif, ;
+    grid-column: 2/10;
+    align-items: center;
     
+
+    &__logo {
+        width: 20%;
+        //height: 100%;
+        align-self: center;
+        //padding-top: .8rem;
+    }
+
+    &__text-container {
+        display: flex;
+    }
+
+    &__menu {
+        margin-left: 1.5rem;
+        font-size: 1rem;
+        color: $Dark-Greyish-Violet;
+        text-transform: uppercase;
+        align-self: center;
+    }
+
+    &__button {
+       
+        font-size: 1rem;
+        color: $Dark-Violet;
+        align-self: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid $Dark-Violet;
+        padding: .7rem 1.5rem;
+        margin-left: 1.5rem;
+
+
+    }
+}
+
+
+
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    background-color: $Dark-Violet;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+
+    &__left {
+        grid-column: 2/6;
+        grid-row: 2/5;
+    }
+
+    &__right {
+        grid-column: 6/9;
+        grid-row: 2/-1;
+
+        &-img {
+           width: 20px;
+        }
+    }
 }

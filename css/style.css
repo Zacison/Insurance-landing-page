@@ -1,2 +1,83 @@
-html {
-  margin: 0; }
+/*
+- Mobile: 375px
+- Desktop: 1440px
+*/
+/*
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Headings
+
+- Family: [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display)
+- Weights: 400
+
+### Body
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+
+## Icons
+
+You can use either use the social icons provided or load in a font icon library. Some library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+*/
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 10vh 40vh 100vh 30vh; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-family: sans-serif;
+  grid-column: 2/10;
+  align-items: center; }
+  .header__logo {
+    width: 20%;
+    align-self: center; }
+  .header__text-container {
+    display: flex; }
+  .header__menu {
+    margin-left: 1.5rem;
+    font-size: 1rem;
+    color: #837d87;
+    text-transform: uppercase;
+    align-self: center; }
+  .header__button {
+    font-size: 1rem;
+    color: #2d2640;
+    align-self: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid #2d2640;
+    padding: .7rem 1.5rem;
+    margin-left: 1.5rem; }
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: #2d2640;
+  grid-column: 1/-1;
+  grid-row: 2/3; }
+  .hero__left {
+    grid-column: 2/6;
+    grid-row: 2/5; }
+  .hero__right {
+    grid-column: 6/9;
+    grid-row: 2/-1; }
+    .hero__right-img {
+      width: 20px; }
