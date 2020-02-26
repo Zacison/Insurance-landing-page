@@ -42,7 +42,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  font-family: sans-serif;
+  font-family: karla;
   grid-column: 2/10;
   align-items: center; }
   .header__logo {
@@ -76,6 +76,17 @@ body {
   .hero__left {
     grid-column: 2/6;
     grid-row: 2/5; }
+    .hero__left-headline {
+      color: #fafafa;
+      font-size: 4.4rem;
+      font-family: DM Serif Display;
+      font-weight: 400; }
+    .hero__left-paragraph {
+      padding-top: 1rem;
+      color: #fafafa;
+      font-family: karla;
+      line-height: 1.5rem;
+      font-weight: 400; }
   .hero__right {
     grid-column: 6/9;
     grid-row: 2/-1; }

@@ -56,7 +56,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    font-family: sans-serif, ;
+    font-family: karla ;
     grid-column: 2/10;
     align-items: center;
     
@@ -109,6 +109,25 @@ body {
     &__left {
         grid-column: 2/6;
         grid-row: 2/5;
+
+        &-headline {
+            color: $Very-Light-Gray;
+            font-size: 4.4rem;
+            font-family: DM Serif Display;
+            font-weight: 400;
+        }
+
+        &-paragraph {
+            padding-top: 1rem;
+            color: $Very-Light-Gray;
+            font-family: karla;
+            line-height: 1.5rem;
+            font-weight: 400;
+        }
+
+        &-button {
+
+        }
     }
 
     &__right {
