@@ -49,7 +49,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 8vh 45vh 75vh 20vh 30vh;
+    grid-template-rows: 8vh 45vh 75vh 20vh 5vh 30vh;
     position: relative;
     z-index: 1;
 }
@@ -326,5 +326,77 @@ body {
         padding-right: 0;
         height: 20vh;
         z-index: 1;
+    }
+}
+
+.footer {
+    grid-column: 1/-1;
+    grid-row: 6/7;
+    margin-bottom: -7rem;
+    background-color: $Very-Light-Gray;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 5rem;
+    position: relative;
+
+    
+
+    &__top-box {
+        grid-column: 2/10;
+        grid-row: 1/2;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $Grayish-Blue;
+        display: flex;
+        background-color: $Very-Light-Gray;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    &__logo {
+        height: 1.5rem;
+        position: relative;
+        z-index: 20;
+    }
+
+    &__icons-img {
+        margin-left: 1rem;
+    }
+
+    &__main {
+        grid-row: 2/4;
+        grid-column: 2/10;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 2rem;
+        position: relative;
+        z-index: 20;
+
+        &-card {
+
+            &-description {
+                margin-bottom: 1.5rem;
+                font-family: karla;
+                font-size: 1.2rem;
+                color: $Grayish-Blue;
+                padding-top: .5rem;
+            }
+
+            &-links {
+                font-family: karla;
+                font-size: 1rem;
+                //color: $Grayish-Blue;
+                padding-top: .7rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__wave {
+        position: absolute;
+        width: 30rem;
+        z-index: 5;
     }
 }
